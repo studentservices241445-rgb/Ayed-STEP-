@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء اختبار مخصص – أكاديمية عايد</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon-512.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo-link">
+          <img src="assets/img/logo.svg" alt="أكاديمية عايد" class="logo" />
+        </a>
+        <h1>إنشاء اختبار مخصص</h1>
+      </div>
+    </header>
+    <main class="quiz-main">
+      <div class="container">
+        <p>
+          اختر القسم وعدد الأسئلة لإنشاء اختبار مصغر يمكنك مشاركته مع أصدقائك.
+        </p>
+        <form id="builder-form" class="user-form">
+          <label>
+            القسم
+            <select name="section" id="builder-section" required>
+              <option value="grammar">القواعد</option>
+              <option value="vocab">المفردات</option>
+              <option value="reading">القراءة</option>
+            </select>
+          </label>
+          <label>
+            عدد الأسئلة (بين 3 و 20)
+            <input type="number" name="count" id="builder-count" min="3" max="20" value="5" required />
+          </label>
+          <div class="form-actions">
+            <button type="button" id="create-quiz" class="cta-button">إنشاء الاختبار</button>
+          </div>
+        </form>
+        <div id="quiz-link" class="hidden">
+          <p>يمكنك مشاركة الرابط التالي مع أصدقائك:</p>
+          <input type="text" id="custom-link" readonly />
+          <button id="copy-custom" class="button secondary">نسخ الرابط</button>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 أكاديمية عايد الرسمية. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+    <script src="assets/js/builder.js"></script>
+  </body>
+</html>

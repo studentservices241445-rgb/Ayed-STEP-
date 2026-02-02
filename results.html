@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نتائج الاختبار – أكاديمية عايد</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon-512.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo-link">
+          <img src="assets/img/logo.svg" alt="أكاديمية عايد" class="logo" />
+        </a>
+        <h1>نتيجة الاختبار وخطة المذاكرة</h1>
+      </div>
+    </header>
+
+    <main class="results-main">
+      <div class="container">
+        <section id="summary">
+          <h2>ملخص الأداء</h2>
+          <p>عدد الإجابات الصحيحة: <span id="correct-count">0</span> من <span id="total-count">0</span></p>
+          <p>التقييم العام: <span id="result-score"></span></p>
+        </section>
+
+        <section id="analysis">
+          <h2>تحليل الأقسام</h2>
+          <div id="section-analysis">
+            <!-- Filled dynamically -->
+          </div>
+        </section>
+
+        <section id="study-plan">
+          <h2>خطة المذاكرة المقترحة</h2>
+          <p id="plan-description">
+            <!-- Filled dynamically -->
+          </p>
+          <table id="plan-table" class="plan-table">
+            <!-- Rows will be added by results.js -->
+          </table>
+          <button id="download-pdf" class="button">تحميل الجدول PDF</button>
+        </section>
+
+        <section id="share-section">
+          <h2>شارك خطتك</h2>
+          <p>
+            شجع زملاءك على تجربة البرنامج باستخدام الرسالة التالية:
+          </p>
+          <textarea id="share-text" rows="4" readonly></textarea>
+          <button id="copy-share" class="button secondary">نسخ الرسالة</button>
+        </section>
+
+        <!-- Removed course suggestion section: الموقع مجاني ولا يعرض دورات -->
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; 2026 أكاديمية عايد الرسمية. جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/results.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اختبار تحديد المستوى – البدء</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon-512.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="index.html" class="logo-link">
+          <img src="assets/img/logo.svg" alt="أكاديمية عايد" class="logo" />
+        </a>
+        <h1>البيانات الشخصية</h1>
+      </div>
+    </header>
+
+    <main class="quiz-main">
+      <div class="container">
+        <div id="attempt-warning" class="warning hidden"></div>
+        <form id="user-info-form" class="user-form">
+          <h2>أدخل بياناتك</h2>
+          <label>
+            الاسم الكامل
+            <input type="text" name="fullName" required />
+          </label>
+          <label>
+            هدفك من الاختبار
+            <select name="goal">
+              <option value="measure">قياس المستوى</option>
+              <option value="plan">الحصول على خطة مذاكرة</option>
+              <option value="course">التسجيل في دورة</option>
+              <option value="other">أخرى</option>
+            </select>
+          </label>
+          <label>
+            المنطقة / المدينة
+            <input type="text" name="location" required />
+          </label>
+          <label>
+            موعد اختبارك
+            <select name="examTime">
+              <option value="24h">أقل من 24 ساعة</option>
+              <option value="3d">أقل من 3 أيام</option>
+              <option value="7d">خلال 7 أيام</option>
+              <option value="1m">خلال شهر</option>
+              <option value="unknown">لم يتم الحجز بعد</option>
+            </select>
+          </label>
+          <label>
+            مدة المذاكرة اليومية المتاحة
+            <select name="studyDuration">
+              <option value="30m">30 دقيقة</option>
+              <option value="1h">ساعة واحدة</option>
+              <option value="2h">ساعتين</option>
+              <option value="3h">ثلاث ساعات أو أكثر</option>
+            </select>
+          </label>
+          <label>
+            الوقت المناسب للمذاكرة
+            <select name="studyTime">
+              <option value="morning">صباحاً</option>
+              <option value="afternoon">بعد الظهر</option>
+              <option value="evening">مساءً</option>
+              <option value="flexible">مرن</option>
+            </select>
+          </label>
+          <label>
+            المرحلة الدراسية
+            <select name="educationLevel" id="educationLevel">
+              <option value="highschool">ثانوي</option>
+              <option value="university">جامعي</option>
+              <option value="graduate">دراسات عليا</option>
+              <option value="graduate">متخرج</option>
+              <option value="other">أخرى</option>
+            </select>
+          </label>
+          <div id="university-details" class="hidden">
+            <label>
+              السنة الدراسية
+              <input type="text" name="uniYear" />
+            </label>
+            <label>
+              التخصص / المسار
+              <input type="text" name="uniMajor" />
+            </label>
+          </div>
+          <label>
+            طريقة المذاكرة المفضلة
+            <select name="studyStyle">
+              <option value="direct">شرح مباشر</option>
+              <option value="recorded">محاضرات مسجلة</option>
+              <option value="short">مقاطع قصيرة</option>
+              <option value="files">ملفات وكويزات</option>
+            </select>
+          </label>
+          <label>
+            هل سبق وأن اختبرت STEP؟
+            <select name="previousExam" id="previousExam">
+              <option value="no">لا</option>
+              <option value="yes">نعم</option>
+            </select>
+          </label>
+          <div id="previous-score" class="hidden">
+            <label>
+              درجتك السابقة
+              <input type="number" name="prevScore" min="0" max="100" />
+            </label>
+            <label>
+              الدرجة المستهدفة
+              <input type="number" name="targetScore" min="0" max="100" />
+            </label>
+          </div>
+          <label>
+            أصعب قسم بالنسبة لك
+            <select name="weakSection">
+              <option value="grammar">القواعد</option>
+              <option value="vocab">المفردات</option>
+              <option value="reading">القراءة</option>
+              <option value="listening">الاستماع</option>
+              <option value="writing">الكتابة</option>
+              <option value="unknown">لا أعرف</option>
+            </select>
+          </label>
+          <label>
+            اختر أحد أهدافك التالية
+            <select name="testPurpose">
+              <option value="organise">تنظيم خطة مذاكرة</option>
+              <option value="course">اختيار دورة مناسبة</option>
+              <option value="measure">قياس المستوى فقط</option>
+              <option value="other">أخرى</option>
+            </select>
+          </label>
+          <label>
+            ملاحظات إضافية (اختياري)
+            <textarea name="notes" rows="3"></textarea>
+          </label>
+
+          <label>
+            هل اشتركت في دورة سابقة؟
+            <select name="haveCourse" id="haveCourse">
+              <option value="no">لم أشترك</option>
+              <option value="ayed">دورة عايد</option>
+              <option value="shamela">الدورة الشاملة الحديثة</option>
+              <option value="dream">مبادرة حلم</option>
+              <option value="otherCourse">دورة أخرى</option>
+              <option value="platform">منصة أخرى</option>
+            </select>
+          </label>
+          <div id="course-issues" class="hidden">
+            <label>ما المشاكل التي واجهتها؟ (اختر ما ينطبق)</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="issues" value="noUpdates" /> لا توجد تحديثات</label>
+              <label><input type="checkbox" name="issues" value="slowSupport" /> الدعم بطيء في الرد</label>
+              <label><input type="checkbox" name="issues" value="noPlans" /> لا توجد خطط واضحة</label>
+              <label><input type="checkbox" name="issues" value="other" /> أخرى</label>
+            </div>
+          </div>
+          <label>
+            من أين سمعت عن البرنامج؟
+            <select name="heardAbout">
+              <option value="friend">صديق</option>
+              <option value="social">وسائل التواصل الاجتماعي</option>
+              <option value="search">بحث على الإنترنت</option>
+              <option value="university">دعاية جامعية</option>
+              <option value="other">أخرى</option>
+            </select>
+          </label>
+          <div class="form-actions">
+            <button type="button" id="start-quiz" class="cta-button">ابدأ الاختبار</button>
+          </div>
+        </form>
+
+        <!-- Quiz container (hidden until start) -->
+        <div id="quiz-container" class="hidden">
+          <h2>الاختبار</h2>
+          <div id="progress">السؤال <span id="current-question">1</span> من <span id="total-questions"></span></div>
+          <div id="quiz-question"></div>
+          <div id="quiz-options"></div>
+          <div id="quiz-feedback"></div>
+          <div class="quiz-nav">
+            <button id="prev-btn" class="button" disabled>السابق</button>
+            <button id="next-btn" class="button">التالي</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/quiz.js"></script>
+    <script>
+      // Show/hide extra fields based on education level and previous exam
+      const educationLevel = document.getElementById('educationLevel');
+      const universityDetails = document.getElementById('university-details');
+      const previousExam = document.getElementById('previousExam');
+      const previousScore = document.getElementById('previous-score');
+      educationLevel.addEventListener('change', () => {
+        if (educationLevel.value === 'university') {
+          universityDetails.classList.remove('hidden');
+        } else {
+          universityDetails.classList.add('hidden');
+        }
+      });
+      previousExam.addEventListener('change', () => {
+        if (previousExam.value === 'yes') {
+          previousScore.classList.remove('hidden');
+        } else {
+          previousScore.classList.add('hidden');
+        }
+      });
+
+      // Show/hide course issues based on course selection
+      const haveCourse = document.getElementById('haveCourse');
+      const courseIssues = document.getElementById('course-issues');
+      haveCourse.addEventListener('change', () => {
+        if (haveCourse.value !== 'no') {
+          courseIssues.classList.remove('hidden');
+        } else {
+          courseIssues.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>
