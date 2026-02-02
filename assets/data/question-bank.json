@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "section": "grammar",
+    "question": "اختر الكلمة الصحيحة لإكمال الجملة: My sister doesn't speak French, and ____ does my brother.",
+    "options": [
+      "either",
+      "neither",
+      "so",
+      "too"
+    ],
+    "answer": 1,
+    "explanation": "نستخدم neither ... nor لربط جمل منفية بمعنى \"ولا أنا كذلك\"."
+  },
+  {
+    "id": 2,
+    "section": "grammar",
+    "question": "أين يجب وضع الفاصلة في الجملة التالية؟ The teacher asked the students if they wanted to finish early and they screamed yes.",
+    "options": [
+      "بعد كلمة early",
+      "بعد كلمة students",
+      "بعد كلمة screamed",
+      "لا توجد فاصلة مطلوبة"
+    ],
+    "answer": 0,
+    "explanation": "يجب إضافة فاصلة قبل \"and\" للفصل بين الجملتين المستقلتين."
+  },
+  {
+    "id": 3,
+    "section": "grammar",
+    "question": "اختر الفعل المناسب: She enjoys ____ novels in her free time.",
+    "options": [
+      "to read",
+      "reading",
+      "read",
+      "reads"
+    ],
+    "answer": 1,
+    "explanation": "بعد الفعل enjoy نستخدم الفعل مع ing: enjoys reading."
+  },
+  {
+    "id": 4,
+    "section": "vocab",
+    "question": "ما معنى الكلمة: Conventional؟",
+    "options": [
+      "modern",
+      "traditional",
+      "expensive",
+      "difficult"
+    ],
+    "answer": 1,
+    "explanation": "كلمة conventional تعني تقليدي أو مألوف."
+  },
+  {
+    "id": 5,
+    "section": "vocab",
+    "question": "اختر مرادف كلمة unstable:",
+    "options": [
+      "solid",
+      "steady",
+      "loose",
+      "clean"
+    ],
+    "answer": 2,
+    "explanation": "unstable تعني غير مستقر أو قابل للانهيار، وأقرب معنى لها هنا هو loose."
+  },
+  {
+    "id": 6,
+    "section": "vocab",
+    "question": "ما معنى الكلمة slab في سياق البناء؟",
+    "options": [
+      "chunk",
+      "wall",
+      "floor",
+      "pillar"
+    ],
+    "answer": 0,
+    "explanation": "slab تعني لوح أو كتلة، ويمكن ترجمتها هنا إلى قطعة chunk."
+  },
+  {
+    "id": 7,
+    "section": "reading",
+    "question": "اختر الجملة الصحيحة: 'We only know the worth of water when the well is ____.'",
+    "options": [
+      "full",
+      "clean",
+      "dry",
+      "deep"
+    ],
+    "answer": 2,
+    "explanation": "المثل الإنجليزي الشهير يقول: 'We only know the worth of water when the well is dry.'"
+  },
+  {
+    "id": 8,
+    "section": "reading",
+    "question": "أي مما يلي يعد مثالاً على استخدام التقنية الحديثة في التعليم؟",
+    "options": [
+      "استخدام الكتب الورقية فقط",
+      "محاضرات مباشرة دون وسائل مساعدة",
+      "توظيف التعلم الإلكتروني والمنصات الرقمية",
+      "إلغاء الفصول الدراسية"
+    ],
+    "answer": 2,
+    "explanation": "التعلم الإلكتروني والمنصات الرقمية يعدان من أحدث وسائل التعليم الحديثة."
+  },
+  {
+    "id": 9,
+    "section": "reading",
+    "question": "ما الفكرة الرئيسية في النص الآتي؟ 'النحل يلعب دورًا مهمًا في تلقيح النباتات وضمان التنوع البيولوجي.'",
+    "options": [
+      "النحل يهاجم البشر",
+      "النحل يسبب أمراضًا خطيرة",
+      "النحل ضروري للتوازن البيئي",
+      "النحل لا فائدة منه"
+    ],
+    "answer": 2,
+    "explanation": "النص يوضح أهمية النحل في تلقيح النباتات وبالتالي دوره في الحفاظ على البيئة."
+  },
+  {
+    "id": 10,
+    "section": "reading",
+    "question": "في أي سنة تم اختراع الحاسوب الشخصي؟",
+    "options": [
+      "1945",
+      "1975",
+      "1995",
+      "2005"
+    ],
+    "answer": 1,
+    "explanation": "يعتبر عام 1975 من الأعوام الأولى لظهور الحواسيب الشخصية مثل Altair 8800."
+  }
+]
